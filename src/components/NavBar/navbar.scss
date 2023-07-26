@@ -61,6 +61,7 @@
 @media (min-width: 768px) {
   .navbar_container {
     right: 0;
+    height: 7rem;
     width: 80%;
 
     .navbar_mobil {
@@ -69,6 +70,16 @@
 
     .navbar_desktop {
       display: flex;
+      flex-direction: column;
+
+      .navbar_header,
+      .navbar_footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50%;
+        width: 100%;
+      }
     }
   }
 }
