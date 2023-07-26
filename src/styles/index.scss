@@ -3,6 +3,9 @@
 @import "../components/NavBar/navbar.scss";
 @import "../components/Card/card.scss";
 @import "../components/Sidebar/sidebar.scss";
+@import "src/components/AnnoucementTrendingContainer/annoucementTrendingContainer.scss";
+@import "src/components/CardsContainer/cardsContainer.scss";
+@import "src/components/Announcement/announcement.scss";
 
 body {
   margin: 0;
@@ -24,4 +27,18 @@ code {
   flex-direction: column;
   margin-top: 5rem;
   padding: 1rem;
+
+  .containers {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .main_content {
+    flex-direction: row;
+    margin-left: 19rem;
+    padding: 1rem;
+    width: 85%;
+  }
 }

@@ -20,6 +20,8 @@ import {
   faShield,
 } from "@fortawesome/free-solid-svg-icons";
 import SideBar from "./components/SideBar/SideBar";
+import AnnoucementTrendingContainer from "./components/AnnoucementTrendingContainer/AnnoucementTrendingContainer";
+import CardsContainer from "./components/CardsContainer/CardsContainer";
 
 library.add(
   faStar,
@@ -46,15 +48,8 @@ function App() {
       <NavBar />
       <SideBar />
       <div className="main_content">
-        <h1>Your projects</h1>
-        <div className="card_container">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </div>
+        <CardsContainer />
+        <AnnoucementTrendingContainer />
       </div>
     </>
   );
