@@ -1,22 +1,68 @@
 .sidebar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: $background-color-blue;
-  height: 100vh;
+  height: 75vh;
   width: 20%;
-  margin-top: 5rem;
+  margin-top: 8rem;
   position: fixed;
   top: 0;
   color: white;
   transition: 0.3s;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: $border-radius-card;
+
+  transform: translateX(-100%);
+
+  &.open {
+    transform: translateX(0%);
+  }
 
   .sidebar_header {
     display: none;
+  }
+
+  .sidebar_links_settings {
+    margin-top: 2rem;
+  }
+
+  .sidebar_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $padding-size;
+    padding: $padding-size;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+
+    li {
+      display: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    &.active {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
   }
 }
 
 @media (min-width: 768px) {
   .sidebar {
     margin-top: 0;
+    justify-content: flex-start;
+    height: 100vh;
+    border-radius: 0;
+    width: auto;
+    padding: 1rem;
+
+    transform: translateX(0%);
 
     .sidebar_header {
       display: flex;
@@ -38,13 +84,17 @@
 
     .sidebar_link {
       display: flex;
+      justify-content: left;
       align-items: center;
-      gap: $padding-size;
       padding: $padding-size;
       text-decoration: none;
       font-size: 1rem;
       font-weight: bold;
       transition: 0.3s;
+
+      li {
+        display: flex;
+      }
 
       &:hover {
         cursor: pointer;
