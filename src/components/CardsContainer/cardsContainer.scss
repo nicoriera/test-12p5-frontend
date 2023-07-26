@@ -1,16 +1,26 @@
 .card_container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 2rem;
   min-height: 10rem;
-}
 
-@media (min-width: 768px) {
-  .card_container {
+  @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     transition: all 0.2s ease-in-out;
+    width: 30rem;
+  }
+
+  @media (min-width: 1024px) {
     width: 50rem;
+  }
+
+  @media (min-width: 1440px) {
+    width: 55rem;
+  }
+
+  @media (min-width: 1920px) {
+    width: 70rem;
   }
 }
