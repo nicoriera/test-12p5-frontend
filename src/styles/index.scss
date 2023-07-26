@@ -6,6 +6,7 @@
 @import "src/components/AnnoucementTrendingContainer/annoucementTrendingContainer.scss";
 @import "src/components/CardsContainer/cardsContainer.scss";
 @import "src/components/Announcement/announcement.scss";
+@import "src/components/Trending/trending.scss";
 
 body {
   margin: 0;
@@ -32,6 +33,14 @@ code {
     display: flex;
     flex-direction: row;
   }
+}
+
+.avatar {
+  vertical-align: middle;
+  width: $avatar-size;
+  height: $avatar-size;
+  border-radius: 50%;
+  padding: $padding-size;
 }
 
 @media (min-width: 768px) {
