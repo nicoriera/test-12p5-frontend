@@ -18,16 +18,25 @@ const NavBar = () => {
         </div>
       </div>
       <div className="navbar_desktop">
-        <div className="logo_input">
-          <div className="search_logo">
-            <FontAwesomeIcon icon="fa-magnifying-glass" />
+        <div className="navbar_header">
+          <div className="logo_input">
+            <div className="search_logo">
+              <FontAwesomeIcon icon="fa-magnifying-glass" />
+            </div>
+            <input type="text" placeholder="" />
           </div>
-          <input type="text" placeholder="" />
+          <div className="avatar_name">
+            <FontAwesomeIcon icon="fa-bell" />
+            <img src={avatarMorgan} alt="Avatar" className="avatar" />
+            <h2>Morgan Oakley</h2>
+          </div>
         </div>
-        <div className="avatar_name">
-          <FontAwesomeIcon icon="fa-bell" />
+        <div className="navbar_footer">
           <img src={avatarMorgan} alt="Avatar" className="avatar" />
-          <h2>Morgan Oakley</h2>
+          <div className="navbar_footer_text">
+            <p>Hi there,</p>
+            <h2>Morgan Oakley (@morgan)</h2>
+          </div>
         </div>
       </div>
     </div>
