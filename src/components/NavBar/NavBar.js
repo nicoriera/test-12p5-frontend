@@ -1,10 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faMagnifyingGlass,
-  faBell,
-} from "@fortawesome/free-solid-svg-icons";
+
 import avatar from "../../assets/avatar.jpg";
 
 const NavBar = () => {
@@ -12,11 +8,11 @@ const NavBar = () => {
     <div className="navbar_container">
       <div className="navbar_mobil">
         <div className="hamburger_logo_mobil">
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon="fa-bars" />
         </div>
         <div className="logo-avatar">
           <div className="search_logo">
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
+            <FontAwesomeIcon icon="fa-magnifying-glass" />
           </div>
           <img src={avatar} alt="Avatar" className="avatar" />
         </div>
@@ -24,12 +20,12 @@ const NavBar = () => {
       <div className="navbar_desktop">
         <div className="logo_input">
           <div className="search_logo">
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
+            <FontAwesomeIcon icon="fa-magnifying-glass" />
           </div>
           <input type="text" placeholder="" />
         </div>
         <div className="avatar_name">
-          <FontAwesomeIcon icon={faBell} />
+          <FontAwesomeIcon icon="fa-bell" />
           <img src={avatar} alt="Avatar" className="avatar" />
           <h2>Morgan Oakley</h2>
         </div>
