@@ -62,7 +62,7 @@
   .navbar_container {
     right: 0;
     height: 9rem;
-    max-width: 85vw;
+    max-width: 83.5vw;
     border-radius: 0 0 20px 20px;
 
     .navbar_mobil {
@@ -111,5 +111,23 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar_container {
+    max-width: 84.5vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .navbar_container {
+    max-width: 85.1vw;
+  }
+}
+
+@media (min-width: 1920px) {
+  .navbar_container {
+    max-width: 85.3vw;
   }
 }
