@@ -35,6 +35,13 @@ code {
   }
 }
 
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: $font-color-h1;
+}
+
 .avatar {
   vertical-align: middle;
   width: $avatar-size;

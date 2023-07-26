@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import avatar from "../../assets/avatar.jpg";
+import avatarMorgan from "../../assets/avatar-morgan.jpg";
 
 const NavBar = () => {
   return (
@@ -14,7 +14,7 @@ const NavBar = () => {
           <div className="search_logo">
             <FontAwesomeIcon icon="fa-magnifying-glass" />
           </div>
-          <img src={avatar} alt="Avatar" className="avatar" />
+          <img src={avatarMorgan} alt="Avatar" className="avatar" />
         </div>
       </div>
       <div className="navbar_desktop">
@@ -26,7 +26,7 @@ const NavBar = () => {
         </div>
         <div className="avatar_name">
           <FontAwesomeIcon icon="fa-bell" />
-          <img src={avatar} alt="Avatar" className="avatar" />
+          <img src={avatarMorgan} alt="Avatar" className="avatar" />
           <h2>Morgan Oakley</h2>
         </div>
       </div>
