@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import avatarMorgan from "../../assets/avatar-morgan.jpg";
 
 const NavBar = () => {
+  const [show, setShow] = useState(true);
+  const [scrollPos, setScrollPos] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const visible = scrollPos > currentScrollPos;
+      setScrollPos(currentScrollPos);
+      setShow(visible);
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollPos]);
+
   return (
-    <div className="navbar_container">
+    <div
+      className="navbar_container"
+      style={{
+        top: show ? "0" : "-80px",
+        transition: "top 0.3s",
+        position: "fixed",
+      }}
+    >
       <div className="navbar_mobil">
         <div className="hamburger_logo_mobil">
           <FontAwesomeIcon icon="fa-bars" />
@@ -32,10 +55,17 @@ const NavBar = () => {
           </div>
         </div>
         <div className="navbar_footer">
-          <img src={avatarMorgan} alt="Avatar" className="avatar" />
-          <div className="navbar_footer_text">
-            <p>Hi there,</p>
-            <h2>Morgan Oakley (@morgan)</h2>
+          <div className="navbar_footer_avatar_text">
+            <img src={avatarMorgan} alt="Avatar" className="avatar" />
+            <div className="navbar_footer_text">
+              <p>Hi there,</p>
+              <h2>Morgan Oakley (@morgan)</h2>
+            </div>
+          </div>
+          <div className="navbar_footer_buttons">
+            <button className="navbar_footer_button">New</button>
+            <button className="navbar_footer_button">Upload</button>
+            <button className="navbar_footer_button">Share</button>
           </div>
         </div>
       </div>
