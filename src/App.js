@@ -1,4 +1,4 @@
-import Card from "./components/Card/Card";
+import React, { useState } from "react";
 import NavBar from "./components/NavBar/NavBar";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -43,10 +43,15 @@ library.add(
 );
 
 function App() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const handleHamburgerClick = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
   return (
     <>
-      <NavBar />
-      <SideBar />
+      <NavBar handleHamburgerClick={handleHamburgerClick} />
+      <SideBar isOpen={isSidebarOpen} />
       <div className="main_content">
         <CardsContainer />
         <AnnoucementTrendingContainer />

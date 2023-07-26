@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import avatarMorgan from "../../assets/avatar-morgan.jpg";
 
-const NavBar = () => {
+const NavBar = ({ handleHamburgerClick }) => {
   const [show, setShow] = useState(true);
   const [scrollPos, setScrollPos] = useState(0);
 
@@ -30,7 +30,7 @@ const NavBar = () => {
       }}
     >
       <div className="navbar_mobil">
-        <div className="hamburger_logo_mobil">
+        <div className="hamburger_logo_mobil" onClick={handleHamburgerClick}>
           <FontAwesomeIcon icon="fa-bars" />
         </div>
         <div className="logo-avatar">
