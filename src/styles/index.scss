@@ -26,7 +26,7 @@ code {
 .main_content {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 9rem;
   padding: 1rem;
 
   .containers {
@@ -54,7 +54,6 @@ h1 {
   .main_content {
     flex-direction: row;
     margin-left: 19rem;
-    padding: 1rem;
     width: 85%;
   }
 }
