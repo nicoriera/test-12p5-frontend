@@ -68,6 +68,9 @@
 
 @media (min-width: 768px) {
   .navbar_container {
+    right: 0;
+    width: 80%;
+
     .navbar_mobil {
       display: none;
     }
