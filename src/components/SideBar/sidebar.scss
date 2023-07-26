@@ -70,14 +70,57 @@
       margin-bottom: 1.5rem;
 
       h1 {
-        margin-left: 1rem;
-        font-weight: bold;
-        color: white;
+        display: none;
       }
     }
 
     .sidebar_links_settings {
       margin-top: 2rem;
+    }
+
+    .sidebar_link {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      padding: $padding-size;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: 0.3s;
+
+      li {
+        display: none;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      &.active {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    max-width: 13vw;
+
+    .sidebar_header {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      padding: $padding-size;
+      margin-bottom: 1.5rem;
+
+      h1 {
+        display: flex;
+        margin-left: 1rem;
+        font-weight: bold;
+        color: white;
+      }
     }
 
     .sidebar_link {
@@ -104,4 +147,7 @@
       }
     }
   }
+}
+
+@media (min-width: 1440px) {
 }
