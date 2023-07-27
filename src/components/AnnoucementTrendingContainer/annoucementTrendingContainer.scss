@@ -1,5 +1,12 @@
 .annoucements_trending_container {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+
+  .announcements_container,
+  .trending_container {
+    height: 60vh;
+  }
 }
 
 @media (min-width: 768px) {
@@ -12,7 +19,7 @@
 
     .announcements_container,
     .trending_container {
-      height: 60vh;
+      height: 55vh;
     }
   }
 }
@@ -20,5 +27,32 @@
 @media (min-width: 1024px) {
   .annoucements_trending_container {
     width: 25rem;
+  }
+
+  .announcements_container,
+  .trending_container {
+    height: 30vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .annoucements_trending_container {
+    width: 30rem;
+  }
+
+  .announcements_container,
+  .trending_container {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 1440px) {
+  .annoucements_trending_container {
+    width: 35rem;
+  }
+
+  .announcements_container,
+  .trending_container {
+    height: 75vh;
   }
 }
