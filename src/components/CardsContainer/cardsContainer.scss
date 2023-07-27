@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     transition: all 0.2s ease-in-out;
-    width: 30rem;
+    width: 28rem;
   }
 
   @media (min-width: 1024px) {
@@ -17,7 +17,7 @@
   }
 
   @media (min-width: 1440px) {
-    width: 55rem;
+    width: 52rem;
   }
 
   @media (min-width: 1920px) {
