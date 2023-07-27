@@ -49,6 +49,11 @@ h1 {
   height: $avatar-size;
   border-radius: 50%;
   padding: $padding-size;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
 }
 
 .button {

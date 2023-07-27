@@ -10,6 +10,27 @@
   transform: transform 0.2s ease;
   background-color: $background-color-card;
 
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  .card_header {
+    h2 {
+      margin: 0.5rem 0 0 0;
+      padding: 0;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    p {
+      margin: 0.5rem 0 0 0;
+      padding: 0;
+      font-size: 0.9rem;
+      color: $color-text-grey;
+      line-height: 1rem;
+    }
+  }
+
   .card_background_white {
     display: flex;
     flex-direction: column;
@@ -28,6 +49,20 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
+
+    svg {
+      margin-left: 1rem;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+
+      &:active {
+        transform: scale(1);
+        color: $background-color-blue;
+      }
+    }
   }
 
   .card_footer_left {
