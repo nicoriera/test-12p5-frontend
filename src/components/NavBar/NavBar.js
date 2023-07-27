@@ -1,34 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import avatarMorgan from "../../assets/avatar-morgan.jpg";
 
 const NavBar = ({ handleHamburgerClick, handleModalClick }) => {
-  const [show, setShow] = useState(true);
-  const [scrollPos, setScrollPos] = useState(0);
-
-  useEffect(() => {
-    const onScroll = () => {
-      const currentScrollPos = window.scrollY;
-      const visible = scrollPos > currentScrollPos;
-      setScrollPos(currentScrollPos);
-      setShow(visible);
-    };
-
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [scrollPos]);
-
   return (
-    <div
-      className="navbar_container"
-      style={{
-        top: show ? "0" : "-80px",
-        transition: "top 0.3s",
-        position: "fixed",
-      }}
-    >
+    <div className="navbar_container">
       <div className="navbar_mobil">
         <div className="hamburger_logo_mobil" onClick={handleHamburgerClick}>
           <FontAwesomeIcon icon="fa-bars" />
