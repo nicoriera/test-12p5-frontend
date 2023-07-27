@@ -18,6 +18,7 @@ import {
   faGear,
   faCircleQuestion,
   faShield,
+  faTrash,
 } from "@fortawesome/free-solid-svg-icons";
 import SideBar from "./components/SideBar/SideBar";
 import AnnoucementTrendingContainer from "./components/AnnoucementTrendingContainer/AnnoucementTrendingContainer";
@@ -39,7 +40,8 @@ library.add(
   faPeopleGroup,
   faGear,
   faCircleQuestion,
-  faShield
+  faShield,
+  faTrash
 );
 
 function App() {
