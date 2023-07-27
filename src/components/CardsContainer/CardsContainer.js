@@ -1,19 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "../Card/Card";
-import cards from "../../data/data.json";
 
-const CardsContainer = () => {
-  const [cardsData, setCardsData] = useState(cards);
-
+const CardsContainer = ({ cards, setCards }) => {
   const removeCard = (id) => {
-    setCardsData((prevCards) => prevCards.filter((card) => card.id !== id));
+    setCards((prevCards) => prevCards.filter((card) => card.id !== id));
   };
 
   return (
     <div>
       <h1>Your projects</h1>
       <div className="card_container">
-        {cardsData.map((card) => (
+        {cards.map((card) => (
           <Card
             key={card.id}
             title={card.title}
