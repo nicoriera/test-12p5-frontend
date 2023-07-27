@@ -1,0 +1,72 @@
+.add_card_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: $padding-size;
+  border-radius: $border-radius-card;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  width: 20rem;
+  height: 20rem;
+
+  .close_modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: $background-color-blue;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: $border-radius;
+    border: none;
+    background-color: rgb(227, 227, 227);
+  }
+
+  input {
+    margin-top: 1rem;
+  }
+
+  textarea {
+    height: 20vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .add_card_form {
+    background-color: white;
+  }
+}
+
+@media (min-width: 1024px) {
+  .add_card_form {
+    background-color: white;
+  }
+}
+
+@media (min-width: 1280px) {
+  .add_card_form {
+    background-color: white;
+  }
+}
+
+@media (min-width: 1536px) {
+  .add_card_form {
+    background-color: white;
+  }
+}

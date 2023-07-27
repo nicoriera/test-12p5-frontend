@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import avatarMorgan from "../../assets/avatar-morgan.jpg";
 
-const NavBar = ({ handleHamburgerClick }) => {
+const NavBar = ({ handleHamburgerClick, handleModalClick }) => {
   const [show, setShow] = useState(true);
   const [scrollPos, setScrollPos] = useState(0);
 
@@ -63,9 +63,11 @@ const NavBar = ({ handleHamburgerClick }) => {
             </div>
           </div>
           <div className="navbar_footer_buttons">
-            <button className="navbar_footer_button">New</button>
-            <button className="navbar_footer_button">Upload</button>
-            <button className="navbar_footer_button">Share</button>
+            <button className="button" onClick={handleModalClick}>
+              New
+            </button>
+            <button className="button">Share</button>
+            <button className="button">Upload</button>
           </div>
         </div>
       </div>
