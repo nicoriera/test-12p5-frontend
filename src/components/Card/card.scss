@@ -22,6 +22,14 @@
     padding: 1rem;
   }
 
+  .card_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
   .card_footer_left {
     display: flex;
     flex-direction: row;
