@@ -10,7 +10,7 @@ const NavBar = ({ handleHamburgerClick, handleModalClick }) => {
         <div className="hamburger_logo_mobil" onClick={handleHamburgerClick}>
           <FontAwesomeIcon icon="fa-bars" />
         </div>
-        <div className="logo-avatar">
+        <div className="logo_avatar">
           <div className="search_logo">
             <FontAwesomeIcon icon="fa-magnifying-glass" />
           </div>
