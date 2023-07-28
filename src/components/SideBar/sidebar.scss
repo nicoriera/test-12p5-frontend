@@ -57,7 +57,7 @@
     justify-content: flex-start;
     height: 100vh;
     border-radius: 0;
-    max-width: 13vw;
+    width: min-content;
     padding: 1rem;
 
     transform: translateX(0%);
@@ -93,8 +93,6 @@
       }
     }
   }
-
-  width: min-content;
 }
 
 @media (min-width: 1024px) {
@@ -145,7 +143,4 @@
       }
     }
   }
-}
-
-@media (min-width: 1440px) {
 }

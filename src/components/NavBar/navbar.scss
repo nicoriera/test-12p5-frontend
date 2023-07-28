@@ -73,7 +73,8 @@
   @media (min-width: 768px) {
     right: 0;
     height: 9rem;
-    max-width: 83.5vw;
+    width: 85%;
+
     border-radius: 0 0 20px 20px;
 
     .navbar_mobil {
@@ -123,17 +124,5 @@
         padding: $padding-size;
       }
     }
-  }
-
-  @media (min-width: 1024px) {
-    max-width: 84.5vw;
-  }
-
-  @media (min-width: 1440px) {
-    max-width: 85.1vw;
-  }
-
-  @media (min-width: 1920px) {
-    max-width: 85.3vw;
   }
 }
